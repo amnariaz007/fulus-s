@@ -1,0 +1,12 @@
+{
+    "body": {
+        "type": "object",
+        "required": ["duration"],
+        "properties": {
+            "duration": {
+                "type": "number"
+            }
+        }
+    },
+    "headers": { "$ref": "headersSchema#" }
+}

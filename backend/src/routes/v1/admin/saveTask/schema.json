@@ -1,0 +1,26 @@
+{
+    "body": {
+        "type": "object",
+        "required": ["award", "title"],
+        "properties": {
+            "award": {
+                "type": "number"
+            },
+            "title": {
+                "type": "string"
+            },
+            "channelAddress": {
+                "type": "string",
+                "pattern": "^@[A-Za-z0-9_]+$"
+            },
+            "link": {
+                "type": "string",
+                "pattern": "^(?:https?:\\/\\/)?(?:\\w+\\.)?[a-zA-Z0-9-]+\\.[a-zA-Z]{2,}(?:\\/\\S*)?$"
+            },
+            "id": {
+                "type": "number"
+            }
+        }
+    },
+    "headers": { "$ref": "headersSchema#" }
+}

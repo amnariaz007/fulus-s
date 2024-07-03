@@ -1,0 +1,14 @@
+.EmojiRectangle--container {
+    width: 48px;
+    height: 48px;
+    background: var(--foreground_color);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.EmojiRectangle--container img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}

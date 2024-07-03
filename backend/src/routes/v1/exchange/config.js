@@ -1,0 +1,1 @@
+export const EXCHANGE_RATE_GOLD_PER_USDT = 100e3; // 100K usdt = 1 ROCKET

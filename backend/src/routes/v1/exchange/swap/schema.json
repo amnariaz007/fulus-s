@@ -1,0 +1,12 @@
+{
+    "body": {
+        "type": "object",
+        "required": ["usdtCount"],
+        "properties": {
+            "usdtCount": {
+                "type": "number"
+            }
+        }
+    },
+    "headers": { "$ref": "headersSchema#" }
+}

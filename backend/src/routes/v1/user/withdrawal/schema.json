@@ -1,0 +1,21 @@
+{
+    "body": {
+        "type": "object",
+        "required": ["token", "amount", "cryptoNetwork", "cryptoAddress"],
+        "properties": {
+            "token": {
+                "type": "string"
+            },
+            "amount": {
+                "type": "number"
+            },
+            "cryptoNetwork": {
+                "type": "string"
+            },
+            "cryptoAddress": {
+                "type": "string"
+            }
+        }
+    },
+    "headers": { "$ref": "headersSchema#" }
+}

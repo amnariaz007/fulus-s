@@ -1,0 +1,12 @@
+{
+    "body": {
+        "type": "object",
+        "required": ["boost"],
+        "properties": {
+            "boost": {
+                "type": "string"
+            }
+        }
+    },
+    "headers": { "$ref": "headersSchema#" }
+}

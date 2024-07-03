@@ -1,0 +1,1 @@
+export const PAYOUT_GAS_USDT = 1;

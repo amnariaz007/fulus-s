@@ -1,0 +1,57 @@
+.CoinButton--container {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.CoinButton--content {
+    margin: 0 auto;
+    width: min(calc(100% - 48px), 250px);
+    aspect-ratio: 1 / 1;
+
+    background-image: url("../../../../assets/images/coins/rocket_coin_front_400x400.png");
+    background-size: contain;
+
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.CoinButton--content:active {
+    transform: scale(.90);
+}
+
+.CoinButton--digits--container {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.CoinButton--digits--container p {
+    position: absolute;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 54px;
+    pointer-events: none;
+
+    animation: click-animation 1s ease forwards;
+}
+
+@keyframes click-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
+
+/*
+@media screen and (max-height: 780px) {
+    .CoinButton--container {
+        margin-bottom: 24px;
+    }
+    .CoinButton--content {
+        width: min(calc(100% - 48px), 240px);
+    }
+}*/
